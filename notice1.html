@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CIP English - Notice</title>
+    <link rel="stylesheet" href="Design/styles.css" />
+  </head>
+  <body>
+
+
+    <header>
+      <!-- Navbar with Hamburger Icon -->
+      <nav>
+        <div class="logo">
+          <h1>CIPLOGO</h1>
+          <!-- Placeholder for Logo -->
+        </div>
+    
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <ul class="menu" id="menu">
+          <li class="dropdown">
+            <a href="index.html" class="disabled">Home</a>
+            <ul class="dropdown-menu">
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="#">Teacher Management</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Draft 1</a></li>
+              <li><a href="#">Draft 2</a></li>
+              <li><a href="#">Draft 3</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Facilities</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Draft 1</a></li>
+              <li><a href="#">Draft 2</a></li>
+              <li><a href="#">Draft 3</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled active">News & Notice</a>
+            <ul class="dropdown-menu">
+              <li><a href="notice1.html">Notice</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Teachers</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Draft 1</a></li>
+              <li><a href="#">Draft 2</a></li>
+              <li><a href="#">Draft 3</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Promo</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Draft 1</a></li>
+              <li><a href="#">Draft 2</a></li>
+              <li><a href="#">Draft 3</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="disabled">Registration</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Draft 1</a></li>
+              <li><a href="#">Draft 2</a></li>
+              <li><a href="#">Draft 3</a></li>
+              <li><a href="#">Draft 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>    
+
+
+      <!-- Notice Text Below Header -->
+      <h2 class="notice">Notice Page</h2>
+        <!-- Category Filter -->
+        <div class="filter-container">
+          <div class="button-group">
+            <button class="category-button" id="filter-all" onclick="filterArticles('all')">See All</button>
+            <button class="category-button" id="filter-academic" onclick="filterArticles('academic')">Academic</button>
+            <button class="category-button" id="filter-non-academic" onclick="filterArticles('non-academic')">Non-Academic</button>
+            <button class="category-button" id="filter-family" onclick="filterArticles('family')">Family</button>
+            <button class="category-button" id="filter-junior" onclick="filterArticles('junior')">Junior</button>
+          </div>
+        </div>        
+        
+      </div>
+      <div class="article-list">
+      <div class="article-item article-item1 academic">
+        <img src="Images/class.jpg" alt="Article Image 1">
+        <div class="article-content">
+          <h3>Article Title 1</h3>
+          <h4 class="category">Academic</h4>
+          <p class="date">November 19, 2024</p>
+          <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+              <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+          </p>
+          <div class="description">
+              <p>
+              </br> It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+              </p>
+              <a href="Article1.html" id="readMoreLink" class="read-more-link1">Open article</a>
+          </div>
+          <span class="pinned">Pinned</span> <!-- Pinned word -->
+        </div>
+      </div>
+      
+      <!-- Article 2 -->
+      <div class="article-item article-item1 academic">
+        <img src="Images/class.jpg" alt="Article Image 1">
+        <div class="article-content">
+          <h3>Article Title 1</h3>
+          <h4 class="category">Academic</h4>
+          <p class="date">November 19, 2024</p>
+          <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+              <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+          </p>
+          <div class="description">
+              <p>
+                  It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+              </p>
+              <a href="Article1.html" id="readMoreLink" class="read-more-link1">Open article</a>
+          </div>
+          <span class="pinned">Pinned</span> <!-- Pinned word -->
+        </div>
+      </div>
+
+      <div class="article-list">
+<!-- Article 1 -->
+<div class="article-item academic">
+  <img src="Images/class.jpg" alt="Article Image 1">
+  <div class="article-content">
+    <h3>Article Title 1</h3>
+      <h4 class="category">Academic</h4>
+      <p class="date">November 19, 2024</p>
+      <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+          <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+      </p>
+      <div class="description">
+          <p>
+              It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+          </p>
+          <a href="Article1.html" id="readMoreLink" class="read-more-link1">Open article</a>
+      </div>
+  </div>
+</div>
+
+<!-- Article 2 -->
+<div class="article-item non-academic">
+  <img src="Images/class.jpg" alt="Article Image 1">
+  <div class="article-content">
+      <h3>Article Title 1</h3>
+      <h4 class="category">Non-Academic</h4>
+      <p class="date">November 19, 2024</p>
+      <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+          <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+      </p>
+      <div class="description">
+          <p>
+              It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+          </p>
+          <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+      </div>
+  </div>
+</div>
+
+
+          
+          <!-- Article 3 -->
+          <div class="article-item family">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Family</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+                  <!-- Article 3 -->
+                  <div class="article-item junior">
+                    <img src="Images/class.jpg" alt="Article Image 1">
+                    <div class="article-content">
+                        <h3>Article Title 1</h3>
+                        <h4 class="category">Junior</h4>
+                        <p class="date">November 19, 2024</p>
+                        <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                          <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                          <div class="description">
+                            <p>
+                              It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                            </p>
+                            <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                          </div>
+                    </div>
+                </div>
+
+                
+                          <!-- Article 3 -->
+          <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="article-item academic">
+            <img src="Images/class.jpg" alt="Article Image 1">
+            <div class="article-content">
+                <h3>Article Title 1</h3>
+                <h4 class="category">Academic</h4>
+                <p class="date">November 19, 2024</p>
+                <p>It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications.
+                  <a href="#" id="readMoreLink" class="read-more-link">Read more...</a>
+                  <div class="description">
+                    <p>
+                      It is important to understand the fundamentals of programming before diving into advanced concepts. Programming languages such as Python and JavaScript offer versatility for developing various types of applications. Learning to write clean, efficient code is a key skill that will improve over time with practice. Understanding algorithms and data structures will also enhance problem-solving abilities, making programming more enjoyable and rewarding.
+                    </p>
+                    <a href="your-target-page.html" id="readMoreLink" class="read-more-link1">Open article</a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="prev" onclick="navigate(-1)">« Previous</a>
+          <a href="notice1.html" class="page-num active" onclick="navigate(1)">1</a>
+          <a href="#" class="page-num" onclick="navigate(2)">2</a>
+          <a href="#" class="page-num" onclick="navigate(3)">3</a>
+          <a href="#" class="next" onclick="navigate(1)">Next »</a>
+      </div>
+   
+    </br>
+    </br>
+    </br>
+    </br>
+<!-- Chat Icon -->
+<div id="chatIcon" onclick="toggleChatBox()">
+  💬 <!-- You can replace this with any chat icon of your choice -->
+</div>
+
+<!-- Chatbox Container -->
+<div id="chatbox">
+  <header>
+    <img src="Images/class.jpg" alt="Franis" class="chatbox-avatar">
+    CIPBOT
+  </header>
+  <div id="chatlog"></div>
+  <div id="chatInputContainer">
+    <input type="text" id="userInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+</div>
+
+</body>
+</html>
+    <script src="Design/chatbot.js"></script>
+    <script src="Design/script.js"></script>
+    <!-- Link to the separate JS file -->
+  </body>
+</html>
